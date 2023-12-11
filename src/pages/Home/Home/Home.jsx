@@ -1,5 +1,6 @@
 import AboutMe from "../AboutMe/AboutMe";
 import Banner from "../Banner/Banner";
+import Contact from "../Contact/Contact";
 import Education from "../Education/Education";
 import Footer from "../Footer/Footer";
 import Projects from "../Projects/Projects";
@@ -15,6 +16,7 @@ const Home = () => {
       <Education />
       <Skills />
       <Projects />
+      <Contact />
       <Footer />
     </div>
   );
