@@ -16,8 +16,8 @@ const WhatIDo = () => {
             Web Design
           </h2>
           <p className="text-lg font-medium leading-8 text-[#757575]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry’s standard dummy text.
+            Crafting engaging digital experiences, prioritizing user-centric
+            designs with intuitive interfaces and captivating aesthetics.
           </p>
         </div>
         <div className="text-center">
@@ -26,8 +26,8 @@ const WhatIDo = () => {
             Web Development
           </h2>
           <p className="text-lg font-medium leading-8 text-[#757575]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry’s standard dummy text.
+            Bringing ideas to life, building innovative websites with seamless
+            functionality using the latest technologies.
           </p>
         </div>
         <div className="text-center">
@@ -36,8 +36,8 @@ const WhatIDo = () => {
             Graphics Design
           </h2>
           <p className="text-lg font-medium leading-8 text-[#757575]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry’s standard dummy text.
+            Crafting visually stunning, smooth designs to tell compelling stories and
+            enhance brand communication effectively.
           </p>
         </div>
       </div>

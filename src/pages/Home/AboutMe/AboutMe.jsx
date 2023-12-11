@@ -13,7 +13,7 @@ const AboutMe = () => {
             </span>
           </p>
           <p className="leading-8 text-xl mt-5">
-            {`I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.`}
+            {`I'm a full-stack developer specialised in frontend and backend development for scalable web apps. I enjoy developing simple, clean and slick websites that provide real value to the end user. I'm very serious about my goal and looking forward to work in new projects. Customer's satisfaction also get's priority as well.`}
           </p>
         </div>
         <div className="text-secondary px-5">
