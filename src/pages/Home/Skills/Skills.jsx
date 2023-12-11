@@ -1,10 +1,4 @@
-import { saveAs } from "file-saver";
-
 const Skills = () => {
-  const handleDownload = () => {
-    const fileUrl = "../../../assets/Shahed_A_ Amin_Shihab_cv.pdf";
-    saveAs(fileUrl, "Shahed_Al_Amin_Shihab_Resume");
-  };
   return (
     <div className="my-24 max-w-6xl mx-auto">
       <h3 className="text-3xl font-semibold text-secondary mb-10">My Skills</h3>
@@ -91,12 +85,12 @@ const Skills = () => {
         </div>
       </div>
       <div className="mt-14 w-fit mx-auto">
-        <button
-          onClick={handleDownload}
+        <a
+          href="https://drive.google.com/file/d/10IQoIESWp8ZOZDhws3Gqslec5hNHoUXL/view?usp=drive_link"
           className="py-3 px-7 border-2 border-secondary font-medium transition duration-500 bg-white capitalize text-lg hover:text-white hover:bg-secondary"
         >
           Download CV
-        </button>
+        </a>
       </div>
     </div>
   );

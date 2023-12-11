@@ -1,6 +1,40 @@
-import { FaArrowRight, FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+import {
+  FaArrowRight,
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
+import toast from "react-hot-toast";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_cahdvt4",
+        "template_51y9nkc",
+        form.current,
+        "4y8k-20FZ7nwO-oKK"
+      )
+      .then(
+        (result) => {
+          if (result.status === 200) {
+            toast.success("Message Sent!");
+          }
+        },
+        (error) => {
+          toast.error(error.text);
+        }
+      );
+  };
+
   return (
     <div className="min-h-screen bg-primary">
       <div className="max-w-6xl mx-auto py-24 flex flex-col md:flex-row gap-16">
@@ -58,12 +92,13 @@ const Contact = () => {
           <h2 className="text-4xl font-semibold text-secondary">
             Estimate your Project?
           </h2>
-          <form className="mt-8">
+          <form ref={form} onSubmit={sendEmail} className="mt-8">
             <div className="form-control">
               <label htmlFor="name">
                 <span className="text-secondary">What is Your Name:</span>
               </label>
               <input
+                name="user_name"
                 id="name"
                 type="text"
                 className="input bg-transparent border-b-2 border-b-[#00DF89] focus:outline-none focus:border-b-secondary rounded-none mt-1"
@@ -75,6 +110,7 @@ const Contact = () => {
                 <span className="text-secondary">Your Email Address:</span>
               </label>
               <input
+                name="user_email"
                 id="email"
                 type="email"
                 className="input bg-transparent border-b-2 border-b-[#00DF89] focus:outline-none focus:border-b-secondary rounded-none mt-1"
@@ -86,13 +122,16 @@ const Contact = () => {
                 <span className="text-secondary">How can I Help you?</span>
               </label>
               <textarea
-                name=""
+                name="message"
                 id="textarea"
                 className="textarea rounded-none bg-transparent border-b-2 border-b-[#00DF89] focus:outline-none focus:border-b-secondary h-28 mt-1"
               ></textarea>
             </div>
             <div className="mt-7">
-              <button className="py-3 px-7 rounded-none capitalize text-lg text-white bg-secondary border-none hover:bg-[#424649] flex gap-3 items-center">
+              <button
+                type="submit"
+                className="py-3 px-7 rounded-none capitalize text-lg text-white bg-secondary border-none hover:bg-[#424649] flex gap-3 items-center"
+              >
                 Send <FaArrowRight size={20} />
               </button>
             </div>

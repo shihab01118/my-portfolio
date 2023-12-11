@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
-import { IoArrowDownCircleOutline } from "react-icons/io5";
 import ProfileImg from "../../../assets/profile-pic (1.0).png";
+import { FaArrowDown } from "react-icons/fa";
 
 const Banner = () => {
   return (
@@ -28,10 +28,12 @@ const Banner = () => {
             <button className="py-3 px-7 rounded-none capitalize text-lg text-white bg-secondary border-none hover:bg-[#424649]">
               View My Works
             </button>
-            <button className="text-secondary flex items-center gap-[6px] hover:text-[#424649]">
-              <span className="underline text-lg font-medium">Concact Me</span>{" "}
-              <IoArrowDownCircleOutline size={20} />
-            </button>
+            <a
+              href="https://drive.google.com/file/d/10IQoIESWp8ZOZDhws3Gqslec5hNHoUXL/view?usp=drive_link"
+              className="py-[10px] px-7 border-2 border-secondary transition duration-500 bg-transparent capitalize text-lg hover:text-white hover:bg-secondary flex items-center gap-2"
+            >
+              Download CV <FaArrowDown size={18} />
+            </a>
           </div>
         </div>
         <div className="rounded-full w-[400px] border-[10px] border-white">
