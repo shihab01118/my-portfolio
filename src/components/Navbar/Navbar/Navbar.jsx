@@ -3,10 +3,10 @@ import Dropdown from "../Dropdown/Dropdown";
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-gray-700 bg-opacity-40 fixed py-4">
+    <div className="w-full bg-gray-700 bg-opacity-40 fixed py-4 z-20">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <div>
-          <h2 className="text-secondary font-semibold text-3xl uppercase">
+          <h2 className="text-secondary font-semibold text-4xl uppercase">
             ShihabDev
           </h2>
         </div>

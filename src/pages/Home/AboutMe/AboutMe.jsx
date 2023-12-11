@@ -2,7 +2,7 @@ import Title from "../../../components/Title/Title";
 
 const AboutMe = () => {
   return (
-    <div className="my-20 max-w-6xl mx-auto">
+    <div className="my-24 max-w-6xl mx-auto">
       <Title heading="Know Me More" subHeading="About Me" />
       <div className="mt-8 flex justify-between gap-16">
         <div className="text-secondary flex-1">
