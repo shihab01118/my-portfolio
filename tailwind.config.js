@@ -5,15 +5,12 @@ export default {
     extend: {
       colors: {
         primary: "#00FE9C",
-        secondary: "#212529"
+        secondary: "#212529",
       },
       fontFamily: {
         poppins: "'Poppins', sans-serif",
       },
     },
   },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["light"],
-  },
+  plugins: [],
 };
