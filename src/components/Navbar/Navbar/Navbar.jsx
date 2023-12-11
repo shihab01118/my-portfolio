@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <div>
           <h2 className="text-secondary font-semibold text-4xl uppercase">
-            ShihabDev
+            DevShihab
           </h2>
         </div>
         <div className="flex gap-6">
