@@ -15,6 +15,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const formField = e.target;
 
     emailjs
       .sendForm(
@@ -27,6 +28,7 @@ const Contact = () => {
         (result) => {
           if (result.status === 200) {
             toast.success("Message Sent!");
+            formField.reset();
           }
         },
         (error) => {

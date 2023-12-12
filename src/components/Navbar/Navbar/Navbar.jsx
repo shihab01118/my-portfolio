@@ -1,18 +1,37 @@
-import { FaPhone } from "react-icons/fa";
-import Dropdown from "../Dropdown/Dropdown";
+// import Dropdown from "../Dropdown/Dropdown";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
-
-  window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('NavBar');
+  window.addEventListener("scroll", () => {
+    const navbar = document.getElementById("NavBar");
     if (window.scrollY > 0) {
-      navbar.classList.add('bg-white');
-      navbar.classList.remove('bg-transparent');
+      navbar.classList.add("bg-white");
+      navbar.classList.remove("bg-transparent");
     } else {
-      navbar.classList.remove('bg-white');
-      navbar.classList.add('bg-transparent');
+      navbar.classList.remove("bg-white");
+      navbar.classList.add("bg-transparent");
     }
   });
+
+  const navLinks = (
+    <>
+      <Link to="projects" smooth={true} duration={500}>
+        Projects
+      </Link>
+      <Link to="skills" smooth={true} duration={500}>
+        Skills
+      </Link>
+      <Link to="work" smooth={true} duration={500}>
+        What I Do
+      </Link>
+      <Link to="about" smooth={true} duration={500}>
+        About
+      </Link>
+      <Link to="contact" smooth={true} duration={500}>
+        Contact
+      </Link>
+    </>
+  );
 
   return (
     <div
@@ -25,13 +44,7 @@ const Navbar = () => {
             DevShihab
           </h2>
         </div>
-        <div className="flex gap-6">
-          <div className="flex items-center gap-2">
-            <FaPhone size={18} />
-            <p className="text-lg font-medium">+880 1752 818 764</p>
-          </div>
-          <Dropdown />
-        </div>
+        <div className="flex gap-6 font-medium cursor-pointer">{navLinks}</div>
       </div>
     </div>
   );
