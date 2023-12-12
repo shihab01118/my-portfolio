@@ -4,27 +4,23 @@ import { FaArrowDown } from "react-icons/fa";
 
 const Banner = () => {
   return (
-    <div className="min-h-screen bg-[#00FE9C]">
-      <div className="max-w-6xl mx-auto flex justify-between items-center h-screen">
+    <div className="min-h-screen bg-[#00FE9C] pt-[300px] md:pt-0">
+      <div className="max-w-6xl mx-5 md:mx-10 lg:mx-auto flex flex-col-reverse md:flex-row justify-between md:items-center h-screen gap-8 md:gap-0 pb-14 md:pb-0">
         <div className="text-secondary">
-          <p className="text-4xl uppercase font-light">
+          <p className="text-2xl md:text-3xl lg:text-4xl uppercase font-light">
             Hi, I{"'"}M shahed al amin
           </p>
-          <div className="my-1">
+          <div className="my-3 md:my-1">
             <TypeAnimation
               preRenderFirstString={true}
               speed={35}
               sequence={["Web Designer", 2000, "Web Developer", 2000]}
-              style={{
-                fontSize: "5em",
-                textTransform: "uppercase",
-                fontWeight: 600,
-              }}
+              className="text-[42px] md:text-6xl lg:text-7xl font-semibold uppercase"
               repeat={Infinity}
             />
           </div>
-          <p className="text-xl">based in Dhaka, Bangladesh.</p>
-          <div className="flex mt-8 gap-6 items-center">
+          <p className="md:text-xl">based in Dhaka, Bangladesh.</p>
+          <div className="flex flex-col md:flex-row mt-8 gap-6 items-center">
             <button className="py-3 px-7 rounded-none capitalize text-lg text-white bg-secondary border-none hover:bg-[#424649]">
               View My Works
             </button>
@@ -36,7 +32,7 @@ const Banner = () => {
             </a>
           </div>
         </div>
-        <div className="rounded-full w-[400px] border-[10px] border-white">
+        <div className="rounded-full w-[350px] mx-auto md:mx-0 md:w-[400px] border-[10px] border-white">
           <img src={ProfileImg} alt="Profile Image" title="I'm Shihab" />
         </div>
       </div>

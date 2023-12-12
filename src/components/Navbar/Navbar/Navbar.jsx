@@ -1,4 +1,4 @@
-// import Dropdown from "../Dropdown/Dropdown";
+import Dropdown from "../Dropdown/Dropdown";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -38,13 +38,18 @@ const Navbar = () => {
       id="NavBar"
       className="w-full bg-transparent fixed top-0 left-0 z-50 py-4 transition-all"
     >
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
+      <div className="max-w-6xl mx-5 md:mx-10 lg:mx-auto flex justify-between items-center">
         <div>
-          <h2 className="text-secondary font-semibold text-4xl uppercase">
+          <h2 className="text-secondary font-semibold text-2xl md:text-3xl lg:text-4xl uppercase">
             DevShihab
           </h2>
         </div>
-        <div className="flex gap-6 font-medium cursor-pointer">{navLinks}</div>
+        <div className="hidden md:block">
+          <ul className="flex gap-6 font-medium cursor-pointer">{navLinks}</ul>
+        </div>
+        <div className="md:hidden">
+          <Dropdown />
+        </div>
       </div>
     </div>
   );

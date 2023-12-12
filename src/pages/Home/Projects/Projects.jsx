@@ -6,9 +6,9 @@ import project3 from "../../../assets/Screenshot (18).png";
 
 const Projects = () => {
   return (
-    <div className="my-24 max-w-6xl mx-auto">
+    <div className="my-24 max-w-6xl mx-5 md:mx-10 lg:mx-auto">
       <Title heading="Some of my most recent projects" subHeading="Portfolio" />
-      <div className="mt-10 grid grid-cols-3 gap-6">
+      <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <Project
           img={project1}
           title="Online Forum"

@@ -1,8 +1,8 @@
 const Skills = () => {
   return (
-    <div className="my-24 max-w-6xl mx-auto">
+    <div className="my-24 max-w-6xl mx-5 md:mx-10 lg:mx-auto">
       <h3 className="text-3xl font-semibold text-secondary mb-10">My Skills</h3>
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-2 gap-10">
         <div>
           <div className="flex justify-between font-medium text-secondary mb-2">
             <p>Web Design</p>

@@ -3,7 +3,7 @@ import Image from "../../../assets/Capture.png";
 
 const Education = () => {
   return (
-    <div className="my-24 max-w-6xl mx-auto">
+    <div className="my-24 max-w-6xl mx-5 md:mx-10 lg:mx-auto">
       <Title heading="A Summary of My Education" subHeading="Education" />
       <div className="mt-10 flex flex-col-reverse md:flex-row md:items-center">
         <div className="px-5 py-3 border-transparent border-2 border-l-primary md:w-1/2">

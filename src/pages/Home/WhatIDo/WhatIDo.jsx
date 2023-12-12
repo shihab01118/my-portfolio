@@ -4,12 +4,12 @@ import { IoMdColorPalette } from "react-icons/io";
 
 const WhatIDo = () => {
   return (
-    <div className="my-24 max-w-6xl mx-auto">
+    <div className="my-24 max-w-6xl mx-5 md:mx-10 lg:mx-auto">
       <Title
         heading="How I can help your next project"
         subHeading="What I Do?"
       />
-      <div className="mt-14 grid grid-cols-3 gap-10">
+      <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <div className="text-center">
           <FaDesktop size={60} className="text-primary w-fit mx-auto" />
           <h2 className="text-2xl font-semibold text-secondary mt-4 mb-3">
@@ -36,8 +36,8 @@ const WhatIDo = () => {
             Graphics Design
           </h2>
           <p className="text-lg font-medium leading-8 text-[#757575]">
-            Crafting visually stunning, smooth designs to tell compelling stories and
-            enhance brand communication effectively.
+            Crafting visually stunning, smooth designs to tell compelling
+            stories and enhance brand communication effectively.
           </p>
         </div>
       </div>

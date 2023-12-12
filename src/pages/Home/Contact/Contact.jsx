@@ -39,7 +39,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-primary">
-      <div className="max-w-6xl mx-auto py-24 flex flex-col md:flex-row gap-16">
+      <div className="max-w-6xl mx-5 md:mx-10 lg:mx-auto py-24 flex flex-col md:flex-row gap-16">
         <div className="md:w-1/2">
           <h2 className="text-4xl font-semibold text-secondary">{`Let's get in touch`}</h2>
           <p className="my-8 text-xl md:pr-16 leading-8 text-secondary">
