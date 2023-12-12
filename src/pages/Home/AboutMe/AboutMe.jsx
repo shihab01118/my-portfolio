@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <div className="my-24 max-w-6xl mx-5 md:mx-10 lg:mx-auto">
       <Title heading="Know Me More" subHeading="About Me" />
-      <div className="mt-8 flex flex-col md:flex-row justify-between gap-16">
+      <div className="mt-8 flex flex-col lg:flex-row justify-between gap-16">
         <div className="text-secondary flex-1">
           <p className="text-2xl font-medium">
             {`Hi, I'm`}{" "}
