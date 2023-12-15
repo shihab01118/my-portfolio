@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import AboutMe from "../AboutMe/AboutMe";
 import Banner from "../Banner/Banner";
 import Contact from "../Contact/Contact";
@@ -9,26 +10,31 @@ import WhatIDo from "../WhatIDo/WhatIDo";
 
 const Home = () => {
   return (
-    <div>
-      <Banner />
-      <div id="about">
-        <AboutMe />
+    <>
+    <Helmet>
+      <title>Portfolio - Shahed Al Amin Shihab</title>
+    </Helmet>
+      <div>
+        <Banner />
+        <div id="about">
+          <AboutMe />
+        </div>
+        <div id="work">
+          <WhatIDo />
+        </div>
+        <Education />
+        <div id="skills">
+          <Skills />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
+        <Footer />
       </div>
-      <div id="work">
-        <WhatIDo />
-      </div>
-      <Education />
-      <div id="skills">
-        <Skills />
-      </div>
-      <div id="projects">
-        <Projects />
-      </div>
-      <div id="contact">
-        <Contact />
-      </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 
