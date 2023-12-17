@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-primary">
+    <div className="lg:min-h-screen bg-primary">
       <div className="max-w-6xl mx-5 md:mx-10 lg:mx-auto py-24 flex flex-col lg:flex-row gap-16">
         <div className="lg:w-1/2">
           <h2 className="text-4xl font-semibold text-secondary">{`Let's get in touch`}</h2>

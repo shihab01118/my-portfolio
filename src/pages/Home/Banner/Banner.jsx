@@ -2,6 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 import ProfileImg from "../../../assets/profile-pic (1.0).png";
 import { FaArrowDown } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
@@ -22,7 +23,12 @@ const Banner = () => {
           </div>
           <p className="md:text-xl">based in Dhaka, Bangladesh.</p>
           <div className="flex flex-col md:flex-row mt-8 gap-6 items-center">
-            <Link to="projects" smooth={true} duration={500} className="py-3 px-7 rounded-none capitalize text-lg text-white bg-secondary border-none hover:bg-[#424649] cursor-pointer">
+            <Link
+              to="projects"
+              smooth={true}
+              duration={500}
+              className="py-3 px-7 rounded-none capitalize text-lg text-white bg-secondary border-none hover:bg-[#424649] cursor-pointer"
+            >
               View My Works
             </Link>
             <a
@@ -33,9 +39,16 @@ const Banner = () => {
             </a>
           </div>
         </div>
-        <div className="rounded-full w-[350px] mx-auto md:mx-0 md:w-[400px] border-[10px] border-white">
+        <motion.div
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{
+            duration: .6,
+          }}
+          className="rounded-full w-[350px] mx-auto md:mx-0 md:w-[400px] border-[10px] border-white"
+        >
           <img src={ProfileImg} alt="Profile Image" title="I'm Shihab" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

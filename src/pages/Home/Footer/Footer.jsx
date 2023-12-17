@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="bg-secondary text-white py-16 px-8">
-      <p className="text-center">
+      <p className="text-center text-sm md:text-base">
         Copyright © {new Date().getFullYear()}{" "}
         <a
           href="https://measly-mass.surge.sh"
